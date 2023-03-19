@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search-section">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </div>
+    <div class="stats-section">
+        <div class="user-info">
+            <h2>Username:<p id="username">loading...</p></h2>
+            
+            <h2>Level:<p id="level">loading...</p></h2>
+            
+            <h2>XP:<p id="xp">loading...</p></h2>
+
+            <h2>Avg Grade:<p id="avg">loading...</p></h2>
+            
+        </div>
+        <div class="chart-section">
+            <!-- <div id="loading" class="hidden">
+                <div class="spinner hidden"></div>
+              </div> -->
+            <svg id="skills-chart" viewBox="0 -50 450 400"></svg>
+            <svg id="projects-chart" viewBox="30 30 550 550"></svg>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
